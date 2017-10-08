@@ -44,10 +44,12 @@
                         <constraints>
                             <constraint firstItem="PoK-x6-eT0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7dV-vh-Edh"/>
                             <constraint firstItem="k2I-Ib-Eim" firstAttribute="top" secondItem="PoK-x6-eT0" secondAttribute="bottom" constant="7.5" id="GqF-ew-FJt"/>
+                            <constraint firstItem="k2I-Ib-Eim" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="ORE-6n-qeb"/>
                             <constraint firstItem="k2I-Ib-Eim" firstAttribute="firstBaseline" secondItem="PoK-x6-eT0" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="TJe-4S-9yL"/>
                             <constraint firstItem="PoK-x6-eT0" firstAttribute="leading" secondItem="VpK-A2-aOx" secondAttribute="trailing" constant="-83" id="a0D-ZL-waB"/>
                             <constraint firstItem="PoK-x6-eT0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jaO-0b-x1V"/>
                             <constraint firstItem="k2I-Ib-Eim" firstAttribute="top" secondItem="PoK-x6-eT0" secondAttribute="bottom" constant="7.5" id="mfp-OU-FaL"/>
+                            <constraint firstItem="VpK-A2-aOx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="p6n-Dq-l5c"/>
                             <constraint firstItem="VpK-A2-aOx" firstAttribute="top" secondItem="PoK-x6-eT0" secondAttribute="bottom" constant="36.5" id="rcT-zc-zG5"/>
                             <constraint firstItem="PoK-x6-eT0" firstAttribute="leading" secondItem="k2I-Ib-Eim" secondAttribute="trailing" constant="-77.5" id="wKZ-gd-oxW"/>
                         </constraints>
