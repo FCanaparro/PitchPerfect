@@ -5,8 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoK-x6-eT0">
-                                <rect key="frame" x="163" y="318.5" width="49" height="30"/>
+                                <rect key="frame" x="163" y="328.5" width="49" height="30"/>
                                 <color key="backgroundColor" red="0.26844722893834283" green="1" blue="0.15755678939086903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Record"/>
                                 <connections>
@@ -28,30 +26,30 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2I-Ib-Eim">
-                                <rect key="frame" x="134" y="356" width="106.5" height="21"/>
+                                <rect key="frame" x="134" y="366" width="106.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpK-A2-aOx">
-                                <rect key="frame" x="128" y="385" width="118" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-on-n2U">
+                                <rect key="frame" x="134.5" y="395" width="106" height="30"/>
+                                <state key="normal" title="Stop Recording">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ReY-yr-Jk1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="k2I-Ib-Eim" firstAttribute="centerX" secondItem="PoK-x6-eT0" secondAttribute="centerX" id="79L-QY-CO2"/>
                             <constraint firstItem="PoK-x6-eT0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7dV-vh-Edh"/>
-                            <constraint firstItem="k2I-Ib-Eim" firstAttribute="top" secondItem="PoK-x6-eT0" secondAttribute="bottom" constant="7.5" id="GqF-ew-FJt"/>
-                            <constraint firstItem="k2I-Ib-Eim" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="ORE-6n-qeb"/>
-                            <constraint firstItem="k2I-Ib-Eim" firstAttribute="firstBaseline" secondItem="PoK-x6-eT0" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="TJe-4S-9yL"/>
-                            <constraint firstItem="PoK-x6-eT0" firstAttribute="leading" secondItem="VpK-A2-aOx" secondAttribute="trailing" constant="-83" id="a0D-ZL-waB"/>
-                            <constraint firstItem="PoK-x6-eT0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jaO-0b-x1V"/>
-                            <constraint firstItem="k2I-Ib-Eim" firstAttribute="top" secondItem="PoK-x6-eT0" secondAttribute="bottom" constant="7.5" id="mfp-OU-FaL"/>
-                            <constraint firstItem="VpK-A2-aOx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="p6n-Dq-l5c"/>
-                            <constraint firstItem="VpK-A2-aOx" firstAttribute="top" secondItem="PoK-x6-eT0" secondAttribute="bottom" constant="36.5" id="rcT-zc-zG5"/>
-                            <constraint firstItem="PoK-x6-eT0" firstAttribute="leading" secondItem="k2I-Ib-Eim" secondAttribute="trailing" constant="-77.5" id="wKZ-gd-oxW"/>
+                            <constraint firstItem="tBV-on-n2U" firstAttribute="centerX" secondItem="k2I-Ib-Eim" secondAttribute="centerX" id="Hs6-Lp-QmU"/>
+                            <constraint firstItem="k2I-Ib-Eim" firstAttribute="top" secondItem="PoK-x6-eT0" secondAttribute="bottom" constant="7.5" id="Ooh-YH-NAv"/>
+                            <constraint firstItem="PoK-x6-eT0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Rvi-fV-WRa"/>
+                            <constraint firstItem="PoK-x6-eT0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aQT-xx-AeC"/>
+                            <constraint firstItem="tBV-on-n2U" firstAttribute="top" secondItem="k2I-Ib-Eim" secondAttribute="bottom" constant="8" id="pAi-mY-XNN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

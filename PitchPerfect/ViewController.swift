@@ -29,5 +29,9 @@ class ViewController: UIViewController {
         recordingLabel.isEnabled=false
     }
     
+    @IBAction func stopRecording(_ sender: Any) {
+        recordingLabel.text="Tap to Record"
+        
+    }
 }
 
