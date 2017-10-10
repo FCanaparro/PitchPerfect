@@ -62,7 +62,14 @@ stopRecordingButton.isEnabled=false
     }
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if flag {
         print("Finished recording")
+        performSegue(withIdentifier: "stopRecording", sender: audioRecorded.url)
+        }
+        else
+        {
+            print("Recoring was not sucessfull")
+        }
     }
     
     
