@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    print("viewWillAppear called")
+stopRecordingButton.isEnabled=false
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,13 +32,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func recordaudio(_ sender: Any) {
-        print("record button was presses")
+      //  print("record button was presses")
         recordingLabel.text="Recording in Progress"
-        recordingLabel.isEnabled=false
+        //recordingLabel.isEnabled=false
+        recordButton.isEnabled=false
+        stopRecordingButton.isEnabled=true
+        
     }
     
     @IBAction func stopRecording(_ sender: Any) {
         recordingLabel.text="Tap to Record"
+        stopRecordingButton.isEnabled=false
+        recordButton.isEnabled=true
         
     }
 }
