@@ -80,15 +80,28 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c2B-Yf-I9j">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="252"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfS-T4-e6v" userLabel="Slow Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="504"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="252"/>
                                                 <state key="normal" image="Slow"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKE-46-1Cb" userLabel="Fast Button">
-                                                <rect key="frame" x="160" y="0.0" width="160" height="504"/>
+                                                <rect key="frame" x="160" y="0.0" width="160" height="252"/>
                                                 <state key="normal" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ced-8R-nmU">
+                                        <rect key="frame" x="0.0" y="252" width="320" height="252"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYh-KL-dvW" userLabel="High Pitch Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="252"/>
+                                                <state key="normal" image="HighPitch"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="135-aK-DUh" userLabel="Low Pitch Button">
+                                                <rect key="frame" x="160" y="0.0" width="160" height="252"/>
+                                                <state key="normal" image="LowPitch"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -130,6 +143,8 @@
     </scenes>
     <resources>
         <image name="Fast" width="90" height="90"/>
+        <image name="HighPitch" width="90" height="90"/>
+        <image name="LowPitch" width="90" height="90"/>
         <image name="RecordButton" width="155" height="155"/>
         <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
