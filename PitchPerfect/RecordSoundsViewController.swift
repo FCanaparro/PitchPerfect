@@ -70,8 +70,16 @@ stopRecordingButton.isEnabled=false
         {
             print("Recoring was not sucessfull")
         }
+
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "stopRecording"{
+            let playSoundsVC = segue.destination as! PlaySoundsViewController
+            let recordedAudioUrl = sender as! URL
+            playSoundsVC.recorderdAudioUrl = recordedAudioUrl
+        }
+    }
     
     
 }

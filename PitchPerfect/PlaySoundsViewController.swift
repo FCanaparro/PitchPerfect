@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
+    var recorderdAudioUrl : URL!
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
