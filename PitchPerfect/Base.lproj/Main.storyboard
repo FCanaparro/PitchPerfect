@@ -118,11 +118,12 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OME-RP-IR0" userLabel="Stop Button">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OME-RP-IR0" userLabel="Stop Button">
                                         <rect key="frame" x="0.0" y="378" width="320" height="126"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="64" id="7u9-gH-Ii4"/>
-                                            <constraint firstAttribute="height" constant="64" id="YP3-la-ASh"/>
+                                            <constraint firstAttribute="width" constant="50" id="7u9-gH-Ii4"/>
+                                            <constraint firstAttribute="height" constant="50" id="YP3-la-ASh"/>
                                         </constraints>
                                         <state key="normal" image="Stop"/>
                                     </button>
@@ -138,6 +139,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LdJ-yc-mav"/>
                     </view>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="kYh-KL-dvW" id="VEy-E5-4Fh"/>
+                        <outlet property="echoButton" destination="2px-Da-BHx" id="rlr-Ng-Xmx"/>
+                        <outlet property="rabbitButton" destination="qKE-46-1Cb" id="TVU-ee-mI3"/>
+                        <outlet property="reverbButton" destination="2JH-Ma-Sw7" id="jvo-jQ-QRL"/>
+                        <outlet property="snailButton" destination="WfS-T4-e6v" id="jjl-g9-zmO"/>
+                        <outlet property="stopButton" destination="OME-RP-IR0" id="YIf-fB-9j7"/>
+                        <outlet property="vaderButton" destination="135-aK-DUh" id="kqL-Av-03K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lU-Uk-GJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
