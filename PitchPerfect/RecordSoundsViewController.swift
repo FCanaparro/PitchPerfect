@@ -77,7 +77,7 @@ stopRecordingButton.isEnabled=false
         if segue.identifier == "stopRecording"{
             let playSoundsVC = segue.destination as! PlaySoundsViewController
             let recordedAudioUrl = sender as! URL
-            playSoundsVC.recorderdAudioUrl = recordedAudioUrl
+            playSoundsVC.recordedAudioURL = recordedAudioUrl
         }
     }
     
