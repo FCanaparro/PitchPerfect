@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -141,7 +140,6 @@
                                         <rect key="frame" x="0.0" y="378" width="320" height="126"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="64" id="QIh-LG-jZg"/>
-                                            <constraint firstAttribute="width" secondItem="OME-RP-IR0" secondAttribute="height" multiplier="160:63" id="h5Y-h0-wLe"/>
                                             <constraint firstAttribute="height" constant="64" id="jqX-bH-Vgl"/>
                                         </constraints>
                                         <state key="normal" image="Stop"/>
