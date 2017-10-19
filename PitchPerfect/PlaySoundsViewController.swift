@@ -20,6 +20,7 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton : UIButton!
     @IBOutlet weak var stopButton : UIButton!
     
+    
     var recordedAudioURL:URL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
@@ -62,7 +63,7 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
-        
+        stopButton.imageView?.contentMode = .scaleAspectFit
 
         // Do any additional setup after loading the view.
     }

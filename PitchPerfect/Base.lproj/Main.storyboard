@@ -136,11 +136,12 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OME-RP-IR0" userLabel="Stop Button">
+                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OME-RP-IR0" userLabel="Stop Button">
                                         <rect key="frame" x="0.0" y="378" width="320" height="126"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="64" id="QIh-LG-jZg"/>
-                                            <constraint firstAttribute="height" constant="64" id="jqX-bH-Vgl"/>
+                                            <constraint firstAttribute="height" constant="126" id="QAP-kZ-5ua"/>
+                                            <constraint firstAttribute="width" constant="320" id="zsJ-KZ-PHT"/>
                                         </constraints>
                                         <state key="normal" image="Stop"/>
                                         <connections>

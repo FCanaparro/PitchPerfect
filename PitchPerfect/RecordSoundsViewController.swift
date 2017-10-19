@@ -17,18 +17,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopRecordingButton: UIButton!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-stopRecordingButton.isEnabled=false
+        stopRecordingButton.isEnabled=false
         
     }
-    
-    
     
     
     @IBAction func recordaudio(_ sender: Any) {
