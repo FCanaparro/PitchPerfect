@@ -29,7 +29,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         recordButton.isEnabled = !isrecording
         stopRecordingButton.isEnabled = isrecording
         
-       /*  smarter way on doing this as above 
+       /*  smarter way on doing this as above
          if  isrecording {
             recordingLabel.text="Recording in Progress"
             recordButton.isEnabled=false
@@ -71,12 +71,17 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if flag {
-        print("Finished recording")
+        //print("Finished recording")
         performSegue(withIdentifier: "stopRecording", sender: audioRecorded.url)
         }
         else
         {
-            print("Recoring was not sucessfull")
+            let alert = UIAlertController(title: "Error ", message: "Something went wrong with the audio record process.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                //NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            //print("Recoring was not sucessfull")
         }
 
     }
