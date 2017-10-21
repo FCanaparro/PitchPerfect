@@ -24,7 +24,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func switchLabelAndButtons(isrecording: Bool){
-        if  isrecording {
+       
+        recordingLabel.text = isrecording ? "Recording in Progress" : "Tap to Record"
+        recordButton.isEnabled = !isrecording
+        stopRecordingButton.isEnabled = isrecording
+        
+       /*  smarter way on doing this as above 
+         if  isrecording {
             recordingLabel.text="Recording in Progress"
             recordButton.isEnabled=false
             stopRecordingButton.isEnabled=true
@@ -33,7 +39,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             recordingLabel.text="Tap to Record"
             stopRecordingButton.isEnabled=false
             recordButton.isEnabled=true
-        }
+        }*/
         
     }
     

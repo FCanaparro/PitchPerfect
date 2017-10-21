@@ -54,7 +54,6 @@ class PlaySoundsViewController: UIViewController {
         }
     
     @IBAction func stopButtonPressed(_ sender: AnyObject){
-        print ("Stop button was pressed")
         stopAudio()
         
     }
@@ -70,8 +69,6 @@ class PlaySoundsViewController: UIViewController {
         vaderButton.imageView?.contentMode = .scaleAspectFit
         echoButton.imageView?.contentMode = .scaleAspectFit
         reverbButton.imageView?.contentMode = .scaleAspectFit
-
-        // Do any additional setup after loading the view.
     }
 
 
